@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to widiopranoto."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="widiopranoto" />
+<meta name="dc:title" content="End of Term Test for 11th Graders" />
+
+
+
+<title>
+End of Term Test for 11th Graders
+</title>
+
+<!-- Made with executable version 7.0 Release 0 Build 27 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 0 Build 27 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: Geneva,Arial,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: medium;
+	padding-bottom: 0.5em;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+table,div,span,td{
+	font-size: 1em;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 1em;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: #000000;
+}
+
+div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 1em;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+
+div.ReadingContainer, div.ExerciseContainer{
+	min-width: 15em;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 1px;
+}
+
+div#ContainerDiv{
+	margin: -1px;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 1em;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 1em;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+}
+
+select{
+	font-size: 1em;
+}
+
+div.Feedback {
+	background-color: #C0C0C0;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*width: 90%;*/
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: #000000;
+	box-shadow: 0.2em 0.3em 0.2em #000000;
+	background-color: #C0C0C0;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div.JMixDrag, div.JMatchDrag{
+	padding: 0;
+	background-color: #C0C0C0;
+	border-style: none;
+}
+
+div#GuessDiv{
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+	padding: 0.5em;
+	border: solid 1pt gray;
+	margin-bottom: 0.5em;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+	left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: #000000;
+	box-shadow: 0.2em 0.3em 0.2em #000000;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Geneva,Arial,sans-serif;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+.Answer{
+	font-size: 120%;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #FFFFFF;
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em #7f7f7f;
+}
+
+.FuncButton:active {
+	box-shadow: none;
+}
+
+.FuncButton:hover{
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 0.25rem 0;
+	clear: both;
+	font-size: 1em;
+	padding: 0.2em;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000; 
+	background-color: #000000;
+	color: #ffffff;
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em #000000;
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000FF;
+}
+
+a:visited{
+	color: #0000CC;
+}
+
+a:hover{
+	color: #0000FF;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: #000000;
+	box-shadow: 0.2em 0.3em 0.2em #000000;
+	background-color: #FFFFFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+//	RefreshImages();
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = '&#x2714;';
+var IncorrectIndicator = '&#x2718;';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 50;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('B','',1,100,1);
+I[0][3][1]=new Array('A','',0,0,1);
+I[0][3][2]=new Array('D','',0,0,1);
+I[0][3][3]=new Array('C','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('B','',0,0,1);
+I[1][3][1]=new Array('A','',0,0,1);
+I[1][3][2]=new Array('D','',1,100,1);
+I[1][3][3]=new Array('C','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('B','',1,100,1);
+I[2][3][1]=new Array('C','',0,0,1);
+I[2][3][2]=new Array('D','',0,0,1);
+I[2][3][3]=new Array('A','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('A','',1,100,1);
+I[3][3][1]=new Array('C','',0,0,1);
+I[3][3][2]=new Array('D','',0,0,1);
+I[3][3][3]=new Array('B','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('C','',0,0,1);
+I[4][3][1]=new Array('B','',0,0,1);
+I[4][3][2]=new Array('A','',1,100,1);
+I[4][3][3]=new Array('D','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('B','',0,0,1);
+I[5][3][1]=new Array('A','',1,100,1);
+I[5][3][2]=new Array('C','',0,0,1);
+I[5][3][3]=new Array('D','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('C','',0,0,1);
+I[6][3][1]=new Array('B','',0,0,1);
+I[6][3][2]=new Array('A','',1,100,1);
+I[6][3][3]=new Array('D','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('To take the taxi center.','',0,0,1);
+I[7][3][1]=new Array('In order to get a better taxi.','',0,0,1);
+I[7][3][2]=new Array('In order to pay cheaper.','',0,0,1);
+I[7][3][3]=new Array('To go faster.','',1,100,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('She calls the doctor','',0,0,1);
+I[8][3][1]=new Array('She meets a doctor','',0,0,1);
+I[8][3][2]=new Array('She check to the doctor','',0,0,1);
+I[8][3][3]=new Array('She has a headache','',1,100,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Her job','',0,0,1);
+I[9][3][1]=new Array('Her paper and brochure','',1,100,1);
+I[9][3][2]=new Array('Her books','',0,0,1);
+I[9][3][3]=new Array('Her email','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Educate people about effects of smoking','',1,100,1);
+I[10][3][1]=new Array('Explain about heart attacks, strokes ulcers','',0,0,1);
+I[10][3][2]=new Array('Stop smoking','',0,0,1);
+I[10][3][3]=new Array('Suffer from these diseases','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Selecting the clothing for film stars and models.','',1,100,1);
+I[11][3][1]=new Array('Organizing filming of television programs.','',0,0,1);
+I[11][3][2]=new Array('Hiring the models who appear in advertisements.','',0,0,1);
+I[11][3][3]=new Array('Selecting crews for making film','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('She often works very long days.','',1,100,1);
+I[12][3][1]=new Array('She often recently changed careers.','',0,0,1);
+I[12][3][2]=new Array('She gets tired of doing the same thing.','',0,0,1);
+I[12][3][3]=new Array('She recently received a promotion.','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('don\'t want to be with us as much as we want to be with them','',0,0,1);
+I[13][3][1]=new Array('have a reputation for being friendly to humans','',1,100,1);
+I[13][3][2]=new Array('are the most powerful creatures that live in the oceans','',0,0,1);
+I[13][3][3]=new Array('are proven to be less intelligent than once thought','',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('the most fascinating aspect of the dolphins is communication','',0,0,1);
+I[14][3][1]=new Array('dolphins have some social traits that are similar to those of humans','',1,100,1);
+I[14][3][2]=new Array('dolphins have skills that no other living creatures have such as the ability to think','',0,0,1);
+I[14][3][3]=new Array('dolphins are quite abundant in some areas of the world','',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('I agree with you','',0,0,1);
+I[15][3][1]=new Array('Because smoking is dangerous','',1,100,1);
+I[15][3][2]=new Array('We are so sad','',0,0,1);
+I[15][3][3]=new Array('Thats why we shouldn\'t smoke','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('will have finished','',0,0,1);
+I[16][3][1]=new Array('could finish','',0,0,1);
+I[16][3][2]=new Array('was finished','',0,0,1);
+I[16][3][3]=new Array('have finished','',1,100,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('I agree','',0,0,1);
+I[17][3][1]=new Array('will have finished','',1,100,1);
+I[17][3][2]=new Array('I don\u2019t think so','',0,0,1);
+I[17][3][3]=new Array('I appreciate it','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('We should buy some food now','',1,100,1);
+I[18][3][1]=new Array('We should cook the food','',0,0,1);
+I[18][3][2]=new Array('We should prepare our lunch','',0,0,1);
+I[18][3][3]=new Array('We should have lunch','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('And','',0,0,1);
+I[19][3][1]=new Array('After','',0,0,1);
+I[19][3][2]=new Array('But','',1,100,1);
+I[19][3][3]=new Array('Although','',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Moreover','',1,100,1);
+I[20][3][1]=new Array('But','',0,0,1);
+I[20][3][2]=new Array('And','',0,0,1);
+I[20][3][3]=new Array('Although','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('have gone','',0,0,1);
+I[21][3][1]=new Array('will go','',0,0,1);
+I[21][3][2]=new Array('was gone','',0,0,1);
+I[21][3][3]=new Array('has gone','',1,100,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('I like listening to music better than watching TV.','',1,100,1);
+I[22][3][1]=new Array('I\u2019d rather see the movie','',0,0,1);
+I[22][3][2]=new Array('I had better stay at home','',0,0,1);
+I[22][3][3]=new Array('I like novel better than non-fiction','',0,0,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('Because','',0,0,1);
+I[23][3][1]=new Array('Nevertheless','',0,0,1);
+I[23][3][2]=new Array('Although','',1,100,1);
+I[23][3][3]=new Array('Moreover','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Emma\u2019s family life','',0,0,1);
+I[24][3][1]=new Array('Emma\u2019s effort to be an actress','',1,100,1);
+I[24][3][2]=new Array('Emma\u2019s achievement in film','',0,0,1);
+I[24][3][3]=new Array('Emma\u2019s early life','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('Hard-working.','',1,100,1);
+I[25][3][1]=new Array('Easy-going.','',0,0,1);
+I[25][3][2]=new Array('Uneducated.','',0,0,1);
+I[25][3][3]=new Array('Well-done.','',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('Emma Watson concerns about her education','',1,100,1);
+I[26][3][1]=new Array('Emma Watson is the author of Harry Potter novel','',0,0,1);
+I[26][3][2]=new Array('Emma Watson is not popular artist','',0,0,1);
+I[26][3][3]=new Array('Harry Potter is not a film','',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('A flight cancellation','',0,0,1);
+I[27][3][1]=new Array('A tornado dead victim','',1,100,1);
+I[27][3][2]=new Array('A government building damage','',0,0,1);
+I[27][3][3]=new Array('An Emergency Management Agency','',0,0,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('67','',0,0,1);
+I[28][3][1]=new Array('80','',0,0,1);
+I[28][3][2]=new Array('11','',1,100,1);
+I[28][3][3]=new Array('800','',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('took','',0,0,1);
+I[29][3][1]=new Array('gave','',0,0,1);
+I[29][3][2]=new Array('did','',0,0,1);
+I[29][3][3]=new Array('broke','',1,100,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('Alda Risma','',0,0,1);
+I[30][3][1]=new Array('Anang Hermansyah','',1,100,1);
+I[30][3][2]=new Array('Yovie Widianto','',0,0,1);
+I[30][3][3]=new Array('Dewiq','',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Aku Tak Biasa','',0,0,1);
+I[31][3][1]=new Array('Bohong','',0,0,1);
+I[31][3][2]=new Array('My Lovely','',1,100,1);
+I[31][3][3]=new Array('Jangan Memilih Aku','',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('In 1955','',0,0,1);
+I[32][3][1]=new Array('In 1973','',1,100,1);
+I[32][3][2]=new Array('In 1975','',0,0,1);
+I[32][3][3]=new Array('In 1995','',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('6 Semester','',1,100,1);
+I[33][3][1]=new Array('2 semester','',0,0,1);
+I[33][3][2]=new Array('8 semester','',0,0,1);
+I[33][3][3]=new Array('4 Semester','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('He found poor infrastructure and massive traffic jam.','',1,100,1);
+I[34][3][1]=new Array('He had a master\u2019s degree in business administration from Harvard.','',0,0,1);
+I[34][3][2]=new Array('He didn\u2019t like taxi.','',0,0,1);
+I[34][3][3]=new Array('He borrowed some money.','',0,0,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('He started his smartphone app.','',0,0,1);
+I[35][3][1]=new Array('He started  his own network of \u201Cojeks\u201D','',1,100,1);
+I[35][3][2]=new Array('He borrowed some money.','',0,0,1);
+I[35][3][3]=new Array('He worked in Uber and Grab.','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('unknown','',0,0,1);
+I[36][3][1]=new Array('unimpressed','',0,0,1);
+I[36][3][2]=new Array('unimportant','',0,0,1);
+I[36][3][3]=new Array('undependable','',1,100,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('Mike had holiday to Japan','',0,0,1);
+I[37][3][1]=new Array('Celia enjoyed her holiday','',1,100,1);
+I[37][3][2]=new Array('Celia wasn\u2019t able to see sumo','',0,0,1);
+I[37][3][3]=new Array('Mike didn\u2019t like sushi very much','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Mike and Yuwi have the same hobby.','',1,100,1);
+I[38][3][1]=new Array('Yuwi doesn\u2019t have activity in leisure time.','',0,0,1);
+I[38][3][2]=new Array('Mike often stays at home.','',0,0,1);
+I[38][3][3]=new Array('Mike and Yuwi go fishing together.','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('the weather','',0,0,1);
+I[39][3][1]=new Array('the air conditioner','',0,0,1);
+I[39][3][2]=new Array('the electrician','',0,0,1);
+I[39][3][3]=new Array('the air conditioner brand','',1,100,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('He attended the meeting.','',0,0,1);
+I[40][3][1]=new Array('He was crossing the bridge.','',0,0,1);
+I[40][3][2]=new Array('He was injured.','',1,100,1);
+I[40][3][3]=new Array('He broke his promise.','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('happy','',0,0,1);
+I[41][3][1]=new Array('angry','',1,100,1);
+I[41][3][2]=new Array('surprised','',0,0,1);
+I[41][3][3]=new Array('glad','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('The debate issue of texting and driving.','',0,0,1);
+I[42][3][1]=new Array('The involvement of mobile devices while driving.','',0,0,1);
+I[42][3][2]=new Array('The risk of texting while driving.','',1,100,1);
+I[42][3][3]=new Array('The warning of texting and driving.','',0,0,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('Most of the accident caused by the condition of the road.','',0,0,1);
+I[43][3][1]=new Array('The mobile phone should be banned on the street.','',0,0,1);
+I[43][3][2]=new Array('18 percent of fatal crashes were caused by unnoticed street signs.','',0,0,1);
+I[43][3][3]=new Array('Drivers involved in a car accidents admitted they were texting when they crashed.','',1,100,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('unpleasant','',0,0,1);
+I[44][3][1]=new Array('important','',1,100,1);
+I[44][3][2]=new Array('useful','',0,0,1);
+I[44][3][3]=new Array('convenient','',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('A schedule','',0,0,1);
+I[45][3][1]=new Array('A hobby','',0,0,1);
+I[45][3][2]=new Array('A dream','',0,0,1);
+I[45][3][3]=new Array('An auto-biography','',1,100,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Roger Parker never visited his family in Australia.','',0,0,1);
+I[46][3][1]=new Array('Roger Parker was jobless when he was in America.','',0,0,1);
+I[46][3][2]=new Array('Roger Parker went to America when he was a teenager.','',1,100,1);
+I[46][3][3]=new Array('Roger Parker was a cowboy when he was in Australia.','',0,0,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('mercy','',0,0,1);
+I[47][3][1]=new Array('disaster','',0,0,1);
+I[47][3][2]=new Array('happiness','',0,0,1);
+I[47][3][3]=new Array('sorrow','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('we can do business on the internet.','',1,100,1);
+I[48][3][1]=new Array('we don\u2019t know an electronic newspaper in Indonesia.','',0,0,1);
+I[48][3][2]=new Array('we are familiar with the e-business or e-commerce.','',0,0,1);
+I[48][3][3]=new Array('we can find the biggest E-book store in the world.','',0,0,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Business on the internet is promising.','',1,100,1);
+I[49][3][1]=new Array('All Australian students study math on the internet.','',0,0,1);
+I[49][3][2]=new Array('The products advertised on the net are sold out.','',0,0,1);
+I[49][3][3]=new Array('We don\u2019t know about Amazon.com.','',0,0,1);
+
+
+function StartUp(){
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	PreloadImages('listening_pic_1.jpg','listening_pic_2.jpg','listening_pic_3.jpg');
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">End of Term Test for 11th Graders</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+<div id="ContainerDiv">
+
+
+
+<div class="ExerciseContainer">
+
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&#160;</span>
+
+<button id="NextQButton" class="FuncButton" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText"><p>You must choose one statement (A), (B), (C) or (D) that best describes the picture.</p><br /><img src="listening_pic_1.jpg" width="240" height="160"/><br /><br><br /><audio controls><source src="listening_pic_1.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText"><p>You must choose one statement (A), (B), (C) or (D) that best describes the picture.</p><br /><img src="listening_pic_2.jpg" width="240" height="160"/><br /><br><br /><audio controls><source src="listening_pic_2.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText"><p>You must choose one statement (A), (B), (C) or (D) that best describes the picture.</p><br /><img src="listening_pic_3.jpg" width="240" height="160"/><br /><br><br /><audio controls><source src="listening_pic_3.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">You have to choose the best response to each question.<br /><br><br /><audio controls><source src="listening_qr_4.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">You have to choose the best response to each question.<br /><br><br /><audio controls><source src="listening_qr_5.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">You have to choose the best response to each question.<br /><br><br /><audio controls><source src="listening_qr_6.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">You have to choose the best response to each question.<br /><br><br /><audio controls><source src="listening_qr_7.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;C</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;B</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;D</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.<br /><br><br />Why did the woman finally take the train?<br /><br><br /><audio controls><source src="listening_sc_8.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;To take the taxi center.</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In order to get a better taxi.</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In order to pay cheaper.</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;To go faster.</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.<br /><br><br />Why does the woman look so bad?<br /><br><br /><audio controls><source src="listening_sc_9.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She calls the doctor</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She meets a doctor</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She check to the doctor</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She has a headache</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.<br /><br><br />What have Mitha sent to her teacher?<br /><br><br /><audio controls><source src="listening_sc_10.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Her job</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Her paper and brochure</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Her books</li><li id="Q_9_3"><button class="FuncButton" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Her email</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.<br /><br><br />What is the man probably going to do?<br /><br><br /><audio controls><source src="listening_sc_11.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Educate people about effects of smoking</li><li id="Q_10_1"><button class="FuncButton" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Explain about heart attacks, strokes ulcers</li><li id="Q_10_2"><button class="FuncButton" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Stop smoking</li><li id="Q_10_3"><button class="FuncButton" id="Q_10_3_Btn" onclick="CheckMCAnswer(10,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Suffer from these diseases</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">What does Mrs. Sarah Lee do in her job? <br /><br><br /><audio controls><source src="listening_st_12.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Selecting the clothing for film stars and models.</li><li id="Q_11_1"><button class="FuncButton" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Organizing filming of television programs.</li><li id="Q_11_2"><button class="FuncButton" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Hiring the models who appear in advertisements.</li><li id="Q_11_3"><button class="FuncButton" id="Q_11_3_Btn" onclick="CheckMCAnswer(11,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Selecting crews for making film</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">What is indicated about Mrs. Sarah Lee&#x2019;s job? <br /><br><br /><audio controls><source src="listening_st_12.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She often works very long days.</li><li id="Q_12_1"><button class="FuncButton" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She often recently changed careers.</li><li id="Q_12_2"><button class="FuncButton" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She gets tired of doing the same thing.</li><li id="Q_12_3"><button class="FuncButton" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She recently received a promotion.</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">It is clear that dolphins....<br /><br><br /><audio controls><source src="listening_st_14.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;don't want to be with us as much as we want to be with them</li><li id="Q_13_1"><button class="FuncButton" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;have a reputation for being friendly to humans</li><li id="Q_13_2"><button class="FuncButton" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;are the most powerful creatures that live in the oceans</li><li id="Q_13_3"><button class="FuncButton" id="Q_13_3_Btn" onclick="CheckMCAnswer(13,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;are proven to be less intelligent than once thought</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">We can infer from the text that .... <br /><br><br /><audio controls><source src="listening_st_14.mp3" type="audio/mpeg"><br />Your browser does not support the audio element.<br /></audio></div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the most fascinating aspect of the dolphins is communication</li><li id="Q_14_1"><button class="FuncButton" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;dolphins have some social traits that are similar to those of humans</li><li id="Q_14_2"><button class="FuncButton" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;dolphins have skills that no other living creatures have such as the ability to think</li><li id="Q_14_3"><button class="FuncButton" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;dolphins are quite abundant in some areas of the world</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">Jimmy : Ani, why are you crying?<br /> Ani : My uncle just died last night. I'm so sad.<br />Jimmy : Uncle Jono?! But how?<br />Ani : He died because of lung cancer. He did actually smoke a lot.<br />Jimmy : I'm so sorry for you. ... It's bad for our health.</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I agree with you</li><li id="Q_15_1"><button class="FuncButton" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Because smoking is dangerous</li><li id="Q_15_2"><button class="FuncButton" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We are so sad</li><li id="Q_15_3"><button class="FuncButton" id="Q_15_3_Btn" onclick="CheckMCAnswer(15,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Thats why we shouldn't smoke</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">Rudi: Have you finished the project that Mr.Pras gave to us last week?<br />Roni : Not yet.<br />Rudi : What ? the deadline is Saturday. What have you been doing?<br />Roni : Easy boy, I ... the project by friday.<br /></div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;will have finished</li><li id="Q_16_1"><button class="FuncButton" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;could finish</li><li id="Q_16_2"><button class="FuncButton" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;was finished</li><li id="Q_16_3"><button class="FuncButton" id="Q_16_3_Btn" onclick="CheckMCAnswer(16,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;have finished</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">Jun Pyo : &#x201C;Do you think publishing this news will mean a huge increase in our sales volume?&#x201D;<br />Ji Ho : &#x201C;&#x2026; because we have to spend more money on that&#x201D;<br /></div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I agree</li><li id="Q_17_1"><button class="FuncButton" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;will have finished</li><li id="Q_17_2"><button class="FuncButton" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I don&#x2019;t think so</li><li id="Q_17_3"><button class="FuncButton" id="Q_17_3_Btn" onclick="CheckMCAnswer(17,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I appreciate it</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">Miranda : &#x201C;I am hungry. There is no food at the refrigerator, mom.&#x201D;<br />Mother : &#x201C;I am very busy this week, honey. So I haven&#x2019;t had time to go to the supermarket&#x201D;.<br />Miranda : &#x201C;&#x2026;&#x201D;<br />Mother : &#x201C;Okay then. I have finished my work. Let&#x2019;s go&#x201D;.<br /><br /></div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We should buy some food now</li><li id="Q_18_1"><button class="FuncButton" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We should cook the food</li><li id="Q_18_2"><button class="FuncButton" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We should prepare our lunch</li><li id="Q_18_3"><button class="FuncButton" id="Q_18_3_Btn" onclick="CheckMCAnswer(18,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We should have lunch</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">Calista : &#x201C;Can I go to my friend&#x2019;s house, mom?&#x201D;<br />Mother : &#x201C;But it is already dark, honey&#x201D;<br />Calista : &#x201C;Oh come on, mom. I just want to borrow book for tomorrow&#x201D;<br />Mother : &#x201C;Okay then ... don&#x2019;t take too long&#x201D;<br /><br /><br /><br /><br /><br /><br /></div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;And</li><li id="Q_19_1"><button class="FuncButton" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;After</li><li id="Q_19_2"><button class="FuncButton" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;But</li><li id="Q_19_3"><button class="FuncButton" id="Q_19_3_Btn" onclick="CheckMCAnswer(19,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Although</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">Clara : &#x201C;I would go with you if you picked me up. ... , after waiting for a long time, you didn&#x2019;t come. Why did you do it to me?&#x201D;<br />James : &#x201C;Sorry Clara. Yesterday I had an accident and I lost my handphone so I couldn&#x2019;t call you&#x201D;<br /><br /><br /><br /><br /></div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Moreover</li><li id="Q_20_1"><button class="FuncButton" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;But</li><li id="Q_20_2"><button class="FuncButton" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;And</li><li id="Q_20_3"><button class="FuncButton" id="Q_20_3_Btn" onclick="CheckMCAnswer(20,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Although</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">Aura : &#x201C;Why are you sad, Aini?&#x201D;<br />Aini : &#x201C;I feel so untrue, he &#x2026; out of my life the whole day. I hope one day he realize about his mistake and back to me&#x201D;<br />Aura : &#x201C;Okay friend be spirit&#x201D;<br />Aini : &#x201C;Thank you. You&#x2019;re truly a good friend&#x201D;<br /><br /></div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;have gone</li><li id="Q_21_1"><button class="FuncButton" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;will go</li><li id="Q_21_2"><button class="FuncButton" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;was gone</li><li id="Q_21_3"><button class="FuncButton" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;has gone</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">Frank : &#x201C;What do you like to do in your spare time?&#x201D;<br />Alexa : &#x201C;&#x2026;&#x201D;<br />Diana : &#x201C;I do too. I like jazz&#x201D;<br /><br /></div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I like listening to music better than watching TV.</li><li id="Q_22_1"><button class="FuncButton" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I&#x2019;d rather see the movie</li><li id="Q_22_2"><button class="FuncButton" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I had better stay at home</li><li id="Q_22_3"><button class="FuncButton" id="Q_22_3_Btn" onclick="CheckMCAnswer(22,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;I like novel better than non-fiction</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">Niko : Why do you buy a new handphone? <br />Ari : ... it is expensive, I really want to have it.<br /><br /></div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Because</li><li id="Q_23_1"><button class="FuncButton" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Nevertheless</li><li id="Q_23_2"><button class="FuncButton" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Although</li><li id="Q_23_3"><button class="FuncButton" id="Q_23_3_Btn" onclick="CheckMCAnswer(23,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Moreover</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText"><p><h3>Emma Watson</h3></p> <br /><p>Emma Charlotte Duerre Watson was born in Paris, France to parents Jacqueline Luesby and Chris Watson.When she was five, Emma&#x2019;s parents divorced and then she moved to Oxford shire, England with her mother and younger brother, Alexander. Emma spent much of her childhood residing in England with her mother and stepfather, younger brothers, and two stepbrothers.<br /></p><br /><p><br />From the age of six, Emma knew that she wanted to be an actress. In a couple of years, she trained at the Oxford branch of Stagecoach Theatre Arts, a part-time theatre school where she studied singing, dancing, and acting. By the age of ten, she had performed and taken the lead in various Stagecoach productions and school plays, including Arthur: The Young Years and The Happy Prince. In 1999, casting began for Harry Potter and the Sorcerer's Stone, the film adaptation of British author J.K. Rowling&#x2019;s bestseller novel.<br /></p><br /><p><br />The release of Harry Potter and the Sorcerer&#x2019;s Stone in 2001 was Emma&#x2019;s cinematic screen debut. The film broke records for opening-day sales and opening-weekend takings and was the highest-grossing film of 2001. Critics praised the film and the performances of the three leading young actors. The highly distributed British newspaper, The Daily Telegraph, called her performance &#x201D;admirable&#x2019;.&#x2019;<br />Later, Emma was nominated for five awards for her performance in the film, winning the Young Artist Award for Leading Young Actress in a Feature Film. Since the release of the first film of the highly successful franchise, Emma has quickly become one of the most well-known names in the world. Emma Watson is currently studying at Brown University.<br /></p><br /><p><br />What is the main idea of the second paragraph?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma&#x2019;s family life</li><li id="Q_24_1"><button class="FuncButton" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma&#x2019;s effort to be an actress</li><li id="Q_24_2"><button class="FuncButton" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma&#x2019;s achievement in film</li><li id="Q_24_3"><button class="FuncButton" id="Q_24_3_Btn" onclick="CheckMCAnswer(24,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma&#x2019;s early life</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText"><p><h3>Emma Watson</h3></p> <br /><p>Emma Charlotte Duerre Watson was born in Paris, France to parents Jacqueline Luesby and Chris Watson.When she was five, Emma&#x2019;s parents divorced and then she moved to Oxford shire, England with her mother and younger brother, Alexander. Emma spent much of her childhood residing in England with her mother and stepfather, younger brothers, and two stepbrothers.<br /></p><br /><p><br />From the age of six, Emma knew that she wanted to be an actress. In a couple of years, she trained at the Oxford branch of Stagecoach Theatre Arts, a part-time theatre school where she studied singing, dancing, and acting. By the age of ten, she had performed and taken the lead in various Stagecoach productions and school plays, including Arthur: The Young Years and The Happy Prince. In 1999, casting began for Harry Potter and the Sorcerer's Stone, the film adaptation of British author J.K. Rowling&#x2019;s bestseller novel.<br /></p><br /><p><br />The release of Harry Potter and the Sorcerer&#x2019;s Stone in 2001 was Emma&#x2019;s cinematic screen debut. The film broke records for opening-day sales and opening-weekend takings and was the highest-grossing film of 2001. Critics praised the film and the performances of the three leading young actors. The highly distributed British newspaper, The Daily Telegraph, called her performance &#x201D;admirable&#x2019;.&#x2019;<br />Later, Emma was nominated for five awards for her performance in the film, winning the Young Artist Award for Leading Young Actress in a Feature Film. Since the release of the first film of the highly successful franchise, Emma has quickly become one of the most well-known names in the world. Emma Watson is currently studying at Brown University.<br /></p><br /><p><br />What is the best description of Emma Watson&#x2019;s personality?<br /><br /></div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Hard-working.</li><li id="Q_25_1"><button class="FuncButton" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Easy-going.</li><li id="Q_25_2"><button class="FuncButton" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Uneducated.</li><li id="Q_25_3"><button class="FuncButton" id="Q_25_3_Btn" onclick="CheckMCAnswer(25,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Well-done.</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText"><p><h3>Emma Watson</h3></p> <br /><p>Emma Charlotte Duerre Watson was born in Paris, France to parents Jacqueline Luesby and Chris Watson.When she was five, Emma&#x2019;s parents divorced and then she moved to Oxford shire, England with her mother and younger brother, Alexander. Emma spent much of her childhood residing in England with her mother and stepfather, younger brothers, and two stepbrothers.<br /></p><br /><p><br />From the age of six, Emma knew that she wanted to be an actress. In a couple of years, she trained at the Oxford branch of Stagecoach Theatre Arts, a part-time theatre school where she studied singing, dancing, and acting. By the age of ten, she had performed and taken the lead in various Stagecoach productions and school plays, including Arthur: The Young Years and The Happy Prince. In 1999, casting began for Harry Potter and the Sorcerer's Stone, the film adaptation of British author J.K. Rowling&#x2019;s bestseller novel.<br /></p><br /><p><br />The release of Harry Potter and the Sorcerer&#x2019;s Stone in 2001 was Emma&#x2019;s cinematic screen debut. The film broke records for opening-day sales and opening-weekend takings and was the highest-grossing film of 2001. Critics praised the film and the performances of the three leading young actors. The highly distributed British newspaper, The Daily Telegraph, called her performance &#x201D;admirable&#x2019;.&#x2019;<br />Later, Emma was nominated for five awards for her performance in the film, winning the Young Artist Award for Leading Young Actress in a Feature Film. Since the release of the first film of the highly successful franchise, Emma has quickly become one of the most well-known names in the world. Emma Watson is currently studying at Brown University.<br /></p><br /><p><br />From the text we know that...<br /><br /></div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma Watson concerns about her education</li><li id="Q_26_1"><button class="FuncButton" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma Watson is the author of Harry Potter novel</li><li id="Q_26_2"><button class="FuncButton" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Emma Watson is not popular artist</li><li id="Q_26_3"><button class="FuncButton" id="Q_26_3_Btn" onclick="CheckMCAnswer(26,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Harry Potter is not a film</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText"><p><h3>One Dead As Tornadoes Lash Illinois, U.S.</h3></p> <br /><p>NBC &#x2013; A tornado touched down near Rochelle, Illinois, Thursday evening, leaving one dead and causing substantial damage. The fatality took place in Fairdale, Illinois. Patti Thompson, public information officer for the Illinois Emergency Management Agency, confirmed for USA TODAY early Friday. The victim was a 67-year-old woman, the Rockford Fire Department confirmed via Twitter on Friday. Eleven more people were treated for injuries at local hospitals, the fire agency said. </p><br /><p>The tiny hamlet of Fairdale is about 60 miles northwest of Chicago and took a direct hit when a large twister crossed Interstate 39, The Rockford Fire Dept. said in a tweet from Fairdale that &#x201C;all structures in town are damaged&#x201D;.</p><br /><p>The tornado swept across the town of Hillcrest, about 80 miles west of Chicago and just north of Rochelle. The weather forced the cancellation of more than 800 flights at Chicago&#x2019;s O&#x2019;Hare International Airport and delayed hundreds more.</p><br /><p><br />What is the topic of the text above?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A flight cancellation</li><li id="Q_27_1"><button class="FuncButton" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A tornado dead victim</li><li id="Q_27_2"><button class="FuncButton" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A government building damage</li><li id="Q_27_3"><button class="FuncButton" id="Q_27_3_Btn" onclick="CheckMCAnswer(27,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;An Emergency Management Agency</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText"><p><h3>One Dead As Tornadoes Lash Illinois, U.S.</h3></p> <br /><p>NBC &#x2013; A tornado touched down near Rochelle, Illinois, Thursday evening, leaving one dead and causing substantial damage. The fatality took place in Fairdale, Illinois. Patti Thompson, public information officer for the Illinois Emergency Management Agency, confirmed for USA TODAY early Friday. The victim was a 67-year-old woman, the Rockford Fire Department confirmed via Twitter on Friday. Eleven more people were treated for injuries at local hospitals, the fire agency said. </p><br /><p>The tiny hamlet of Fairdale is about 60 miles northwest of Chicago and took a direct hit when a large twister crossed Interstate 39, The Rockford Fire Dept. said in a tweet from Fairdale that &#x201C;all structures in town are damaged&#x201D;.</p><br /><p>The tornado swept across the town of Hillcrest, about 80 miles west of Chicago and just north of Rochelle. The weather forced the cancellation of more than 800 flights at Chicago&#x2019;s O&#x2019;Hare International Airport and delayed hundreds more.</p><br /><p><br />How many people were treated for injuries at local hospitals?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_28_0"><button class="FuncButton" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;67</li><li id="Q_28_1"><button class="FuncButton" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;80</li><li id="Q_28_2"><button class="FuncButton" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;11</li><li id="Q_28_3"><button class="FuncButton" id="Q_28_3_Btn" onclick="CheckMCAnswer(28,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;800</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText"><p><h3>One Dead As Tornadoes Lash Illinois, U.S.</h3></p> <br /><p>NBC &#x2013; A tornado touched down near Rochelle, Illinois, Thursday evening, leaving one dead and causing substantial damage. The fatality took place in Fairdale, Illinois. Patti Thompson, public information officer for the Illinois Emergency Management Agency, confirmed for USA TODAY early Friday. The victim was a 67-year-old woman, the Rockford Fire Department confirmed via Twitter on Friday. Eleven more people were treated for injuries at local hospitals, the fire agency said. </p><br /><p>The tiny hamlet of Fairdale is about 60 miles northwest of Chicago and took a direct hit when a large twister crossed Interstate 39, The Rockford Fire Dept. said in a tweet from Fairdale that &#x201C;all structures in town are damaged&#x201D;.</p><br /><p>The tornado swept across the town of Hillcrest, about 80 miles west of Chicago and just north of Rochelle. The weather forced the cancellation of more than 800 flights at Chicago&#x2019;s O&#x2019;Hare International Airport and delayed hundreds more.</p><br /><p><br />The tornado <u>swept</u> across the town of Hillcrest. The underlined word has the same meaning with ...<br /></p><br /><br /></div><ol class="MCAnswers"><li id="Q_29_0"><button class="FuncButton" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;took</li><li id="Q_29_1"><button class="FuncButton" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;gave</li><li id="Q_29_2"><button class="FuncButton" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;did</li><li id="Q_29_3"><button class="FuncButton" id="Q_29_3_Btn" onclick="CheckMCAnswer(29,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;broke</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText"><p><h3>Syahrini</h3></p> <br /><p>Rini Fatimah Jaelani, also widely known as "Syahrini" (born in Sukabumi, Indonesia; August 1, 1982) is an Indonesian singer, songwriter, dancer, and actress of Indonesian nationality. Syahrini spent her childhood in Sukabumi, and later earned bachelor law degree from Pakuan University in Bogor. In 2008, She collaborated with songwriters, including Dewiq and Yovie Widianto for her first pop solo album, My Lovely, two songs from that album "Bohong" and "My Lovely" were released as singles. In the middle of 2009, Syahrini released the single, "Pusing Setengah Mati".</p><br /><p>In late 2009, Syahrini met Anang Hermansyah on a TV show who then asked her to be his duet partner. Together they released the singles "Jangan Memilih Aku" and "Cinta Terakhir". In 2010, she recorded a cover version of the late Alda Risma's song "Aku Tak Biasa", and reestablishing her career as an independent solo female singer, after the collaboration with Anang Hermansyah ended.</p><br /><p><br />Who was asking her to be a duet partner?<br /></p></div><ol class="MCAnswers"><li id="Q_30_0"><button class="FuncButton" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Alda Risma</li><li id="Q_30_1"><button class="FuncButton" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Anang Hermansyah</li><li id="Q_30_2"><button class="FuncButton" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Yovie Widianto</li><li id="Q_30_3"><button class="FuncButton" id="Q_30_3_Btn" onclick="CheckMCAnswer(30,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Dewiq</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText"><p><h3>Syahrini</h3></p> <br /><p>Rini Fatimah Jaelani, also widely known as "Syahrini" (born in Sukabumi, Indonesia; August 1, 1982) is an Indonesian singer, songwriter, dancer, and actress of Indonesian nationality. Syahrini spent her childhood in Sukabumi, and later earned bachelor law degree from Pakuan University in Bogor. In 2008, She collaborated with songwriters, including Dewiq and Yovie Widianto for her first pop solo album, My Lovely, two songs from that album "Bohong" and "My Lovely" were released as singles. In the middle of 2009, Syahrini released the single, "Pusing Setengah Mati".</p><br /><p>In late 2009, Syahrini met Anang Hermansyah on a TV show who then asked her to be his duet partner. Together they released the singles "Jangan Memilih Aku" and "Cinta Terakhir". In 2010, she recorded a cover version of the late Alda Risma's song "Aku Tak Biasa", and reestablishing her career as an independent solo female singer, after the collaboration with Anang Hermansyah ended.</p><br /><p><br />What is the title of her first album?<br /></p><br /><br /></div><ol class="MCAnswers"><li id="Q_31_0"><button class="FuncButton" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Aku Tak Biasa</li><li id="Q_31_1"><button class="FuncButton" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Bohong</li><li id="Q_31_2"><button class="FuncButton" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;My Lovely</li><li id="Q_31_3"><button class="FuncButton" id="Q_31_3_Btn" onclick="CheckMCAnswer(31,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Jangan Memilih Aku</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText"><p><h3>Bill Gates</h3></p> <br /><p>Bill Gates was born on Oct. 28, 1955. Gates grew up in Seattle. He attended public elementary school. In 7th grade, his parent sent him to lakeside Private School. His favourite subjects were Math and Reading. </p><br /><p>Gates graduated from Lakeside at the age of 13. After that he continued his study at Harvard University. He studied Math and Law. He worked to become a lawyer. In 1973, his freshman (1st) year, he met Steve Ballmer current C.E.O of Microsoft. While at Harvard, Gates developed a version of the programming language BASIC for the first micro computer &#x2013; the MITS Altair. In his junior (3rd) year, gates left Harvard to devote his energies to Microsoft, a company he had begun in 1975. </p><br /><p>Nowadays, he is consistently ranked in the Forbes list of the world&#x2019;s Wealthiest people and was the wealthiest overall from 1995 to 2009 &#x2013; excluding 2008. According to the Bloomberg Billionaires list, Gates is the world&#x2019;s richest person in 2013, a position that he last held on the list in 2007. </p><br /><p><br />When did Gates work as a lawyer?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_32_0"><button class="FuncButton" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In 1955</li><li id="Q_32_1"><button class="FuncButton" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In 1973</li><li id="Q_32_2"><button class="FuncButton" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In 1975</li><li id="Q_32_3"><button class="FuncButton" id="Q_32_3_Btn" onclick="CheckMCAnswer(32,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In 1995</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText"><p><h3>Bill Gates</h3></p> <br /><p>Bill Gates was born on Oct. 28, 1955. Gates grew up in Seattle. He attended public elementary school. In 7th grade, his parent sent him to lakeside Private School. His favourite subjects were Math and Reading. </p><br /><p>Gates graduated from Lakeside at the age of 13. After that he continued his study at Harvard University. He studied Math and Law. He worked to become a lawyer. In 1973, his freshman (1st) year, he met Steve Ballmer current C.E.O of Microsoft. While at Harvard, Gates developed a version of the programming language BASIC for the first micro computer &#x2013; the MITS Altair. In his junior (3rd) year, gates left Harvard to devote his energies to Microsoft, a company he had begun in 1975. </p><br /><p>Nowadays, he is consistently ranked in the Forbes list of the world&#x2019;s Wealthiest people and was the wealthiest overall from 1995 to 2009 &#x2013; excluding 2008. According to the Bloomberg Billionaires list, Gates is the world&#x2019;s richest person in 2013, a position that he last held on the list in 2007. </p><br /><p><br />How long did Bill Gates studied at Harvard?<br /><br /></div><ol class="MCAnswers"><li id="Q_33_0"><button class="FuncButton" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;6 Semester</li><li id="Q_33_1"><button class="FuncButton" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;2 semester</li><li id="Q_33_2"><button class="FuncButton" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;8 semester</li><li id="Q_33_3"><button class="FuncButton" id="Q_33_3_Btn" onclick="CheckMCAnswer(33,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;4 Semester</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText"><p><h3>Nadiem Makarim</h3></p> <br /><p>Nadiem Makarim who has a master's degree in business administration from Harvard Business School was born in Singapore. When Mr Nadiem Makarim returned to Jakarta after graduating from Harvard in 2011, he took motorcycle-taxis to get around the city but found them unreliable. Indonesia's biggest problems - poor infrastructure and massive traffic jams - turned out to be big opportunities for him.</p> <br /><p>He had the idea of creating his own network of "ojeks" - as these two-wheeled cabs are known locally - and allowing commuters to book them with a smartphone app. With borrowed money as well as his own savings totalling US$100,000 (S$142,000), he launched the Go-Jek ride-hailing app in January, 2015 with a pool of 700 motorbike riders.</p><br /><p>In barely two years, the start-up is already going places, valued at more than US$1.4 billion and boasting the country's largest network of motorcycle-taxis, with more than 250,000 riders in 15 cities.</p><br /><p><br />How did Mr. Nadiem Makarim get his idea to start his business? <br /></p><br /></div><ol class="MCAnswers"><li id="Q_34_0"><button class="FuncButton" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He found poor infrastructure and massive traffic jam.</li><li id="Q_34_1"><button class="FuncButton" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He had a master&#x2019;s degree in business administration from Harvard.</li><li id="Q_34_2"><button class="FuncButton" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He didn&#x2019;t like taxi.</li><li id="Q_34_3"><button class="FuncButton" id="Q_34_3_Btn" onclick="CheckMCAnswer(34,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He borrowed some money.</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText"><p><h3>Nadiem Makarim</h3></p> <br /><p>Nadiem Makarim who has a master's degree in business administration from Harvard Business School was born in Singapore. When Mr Nadiem Makarim returned to Jakarta after graduating from Harvard in 2011, he took motorcycle-taxis to get around the city but found them unreliable. Indonesia's biggest problems - poor infrastructure and massive traffic jams - turned out to be big opportunities for him.</p> <br /><p>He had the idea of creating his own network of "ojeks" - as these two-wheeled cabs are known locally - and allowing commuters to book them with a smartphone app. With borrowed money as well as his own savings totalling US$100,000 (S$142,000), he launched the Go-Jek ride-hailing app in January, 2015 with a pool of 700 motorbike riders.</p><br /><p>In barely two years, the start-up is already going places, valued at more than US$1.4 billion and boasting the country's largest network of motorcycle-taxis, with more than 250,000 riders in 15 cities.</p><br /><p><br />What did Mr. Nadiem Makarim do after he returned to Indonesia?<br /><br /></div><ol class="MCAnswers"><li id="Q_35_0"><button class="FuncButton" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He started his smartphone app.</li><li id="Q_35_1"><button class="FuncButton" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He started his own network of &#x201C;ojeks&#x201D;</li><li id="Q_35_2"><button class="FuncButton" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He borrowed some money.</li><li id="Q_35_3"><button class="FuncButton" id="Q_35_3_Btn" onclick="CheckMCAnswer(35,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He worked in Uber and Grab.</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText"><p><h3>Nadiem Makarim</h3></p> <br /><p>Nadiem Makarim who has a master's degree in business administration from Harvard Business School was born in Singapore. When Mr Nadiem Makarim returned to Jakarta after graduating from Harvard in 2011, he took motorcycle-taxis to get around the city but found them unreliable. Indonesia's biggest problems - poor infrastructure and massive traffic jams - turned out to be big opportunities for him.</p> <br /><p>He had the idea of creating his own network of "ojeks" - as these two-wheeled cabs are known locally - and allowing commuters to book them with a smartphone app. With borrowed money as well as his own savings totalling US$100,000 (S$142,000), he launched the Go-Jek ride-hailing app in January, 2015 with a pool of 700 motorbike riders.</p><br /><p>In barely two years, the start-up is already going places, valued at more than US$1.4 billion and boasting the country's largest network of motorcycle-taxis, with more than 250,000 riders in 15 cities.</p><br /><p><br />&#x201C;&#x2026;he took motorcycle-taxis to get around the city but found them <u>unreliable</u> &#x2026;(paragraph 1) The underlined word has the closest meaning to ....<br /><br /></div><ol class="MCAnswers"><li id="Q_36_0"><button class="FuncButton" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;unknown</li><li id="Q_36_1"><button class="FuncButton" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;unimpressed</li><li id="Q_36_2"><button class="FuncButton" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;unimportant</li><li id="Q_36_3"><button class="FuncButton" id="Q_36_3_Btn" onclick="CheckMCAnswer(36,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;undependable</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">Mike	: How was your holiday?<br />Celia	: It was great. I went to Kyoto Japan<br />Mike	: What did you do there?<br />Celia	: Well, I visited some temples. They are really fantastic and then I went to Sumo match. That was fun! But the most exciting one, of course was visiting the best restaurants in Kyoto.<br />Mike	: So did you like Japanese food?<br />Celia	: Yes, I did. But I didn&#x2019;t like Sushi<br />Mike	: Oh really? I am fond of it<br />Celia	: By the way, don&#x2019;t you want to see my photos?<br />Mike	: Sure<br /><br />From the dialogue we know that....<br /><br /></div><ol class="MCAnswers"><li id="Q_37_0"><button class="FuncButton" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mike had holiday to Japan</li><li id="Q_37_1"><button class="FuncButton" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Celia enjoyed her holiday</li><li id="Q_37_2"><button class="FuncButton" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Celia wasn&#x2019;t able to see sumo</li><li id="Q_37_3"><button class="FuncButton" id="Q_37_3_Btn" onclick="CheckMCAnswer(37,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mike didn&#x2019;t like sushi very much</li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">Yuwi : Do you like fishing in your free time?<br />Mike : Yes, I really do, and you?<br />Yuwi : I do too. I often go fishing in the lake near my house.<br />Mike : We are on the same line.<br /><br />From the dialog, we know that ....<br /></div><ol class="MCAnswers"><li id="Q_38_0"><button class="FuncButton" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mike and Yuwi have the same hobby.</li><li id="Q_38_1"><button class="FuncButton" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Yuwi doesn&#x2019;t have activity in leisure time.</li><li id="Q_38_2"><button class="FuncButton" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mike often stays at home.</li><li id="Q_38_3"><button class="FuncButton" id="Q_38_3_Btn" onclick="CheckMCAnswer(38,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mike and Yuwi go fishing together.</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">Harry : This room is so hot? Did you turn off the air conditioner?<br />Widia : No, it&#x2019;s on. I think it might be broken.<br />Harry : I don&#x2019;t think so. I remember that we bought the same brand and type, and mine is working well. Maybe your air conditioner needs to be cleaned.<br />Widia : I think you&#x2019;re right. It was more than six months ago since the last time I got it cleaned.<br />Harry : You&#x2019;d better do that soon before it&#x2019;s getting worse.<br />Widia : Thanks for your suggestion. I will do that this weekend.<br /><br />What are they talking about? <br /><br /></div><ol class="MCAnswers"><li id="Q_39_0"><button class="FuncButton" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the weather</li><li id="Q_39_1"><button class="FuncButton" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the air conditioner</li><li id="Q_39_2"><button class="FuncButton" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the electrician</li><li id="Q_39_3"><button class="FuncButton" id="Q_39_3_Btn" onclick="CheckMCAnswer(39,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the air conditioner brand</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">Andi : Why did&#x2019;t you attend the meeting? The director was a little upset because of your absence<br />Irman : I got an accident yesterday and broke my arm.<br />Andi : Oh, I am sorry to hear that. How could it happen?<br />Irman : I slipped on the muddy road while I was crossing the street in front of my home.<br /><br />What happened to Irma?<br /><br /></div><ol class="MCAnswers"><li id="Q_40_0"><button class="FuncButton" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He attended the meeting.</li><li id="Q_40_1"><button class="FuncButton" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He was crossing the bridge.</li><li id="Q_40_2"><button class="FuncButton" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He was injured.</li><li id="Q_40_3"><button class="FuncButton" id="Q_40_3_Btn" onclick="CheckMCAnswer(40,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He broke his promise.</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">Andi : Why did&#x2019;t you attend the meeting? The director was a little upset because of your absence<br />Irman : I got an accident yesterday and broke my arm.<br />Andi : Oh, I am sorry to hear that. How could it happen?<br />Irman : I slipped on the muddy road while I was crossing the street in front of my home.<br /><br />&#x201C;The director was a little <u>upset</u> because of your absence.&#x201D;The underlined word has the closest meaning with ....<br /><br /></div><ol class="MCAnswers"><li id="Q_41_0"><button class="FuncButton" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;happy</li><li id="Q_41_1"><button class="FuncButton" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;angry</li><li id="Q_41_2"><button class="FuncButton" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;surprised</li><li id="Q_41_3"><button class="FuncButton" id="Q_41_3_Btn" onclick="CheckMCAnswer(41,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;glad</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText"><p><h3>The Danger of Typing SMS While Driving</h3></p> <br /><br /><p>The popularity of mobile phone devices has had some dangerous consequences. We know that mobile communication are linked to a significant increases in distracted driving which results in injury and loss of life.</p> <br /><p>The National Highway Traffic Safety Administration reported that in 2010 driver distraction was the cause of 18 percent of all fatal crashes with 3,092 people killed and crashes resulting in an injury 416,000 people wounded.</p> <br /><p>The Virginia Tech Transportation Institute found that text messaging creates a crash risk 23 times worse than driving while not distracted. Eleven percen of drivers aged 18 to 20 who were involved in an automobile accident and survived admitted they were sending or receiving texts when they crashed. Distracted driving endangers life and property and the current levels of injury and loss are unacceptable.</p> <br /><p><br />What is the main idea of the passage?<br /></p><br /><br /><br /></div><ol class="MCAnswers"><li id="Q_42_0"><button class="FuncButton" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The debate issue of texting and driving.</li><li id="Q_42_1"><button class="FuncButton" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The involvement of mobile devices while driving.</li><li id="Q_42_2"><button class="FuncButton" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The risk of texting while driving.</li><li id="Q_42_3"><button class="FuncButton" id="Q_42_3_Btn" onclick="CheckMCAnswer(42,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The warning of texting and driving.</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText"><p><h3>The Danger of Typing SMS While Driving</h3></p> <br /><br /><p>The popularity of mobile phone devices has had some dangerous consequences. We know that mobile communication are linked to a significant increases in distracted driving which results in injury and loss of life.</p> <br /><p>The National Highway Traffic Safety Administration reported that in 2010 driver distraction was the cause of 18 percent of all fatal crashes with 3,092 people killed and crashes resulting in an injury 416,000 people wounded.</p> <br /><p>The Virginia Tech Transportation Institute found that text messaging creates a crash risk 23 times worse than driving while not distracted. Eleven percen of drivers aged 18 to 20 who were involved in an automobile accident and survived admitted they were sending or receiving texts when they crashed. Distracted driving endangers life and property and the current levels of injury and loss are unacceptable.</p> <br /><p><br />From the text we know that...<br /></p><br /></div><ol class="MCAnswers"><li id="Q_43_0"><button class="FuncButton" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Most of the accident caused by the condition of the road.</li><li id="Q_43_1"><button class="FuncButton" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The mobile phone should be banned on the street.</li><li id="Q_43_2"><button class="FuncButton" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;18 percent of fatal crashes were caused by unnoticed street signs.</li><li id="Q_43_3"><button class="FuncButton" id="Q_43_3_Btn" onclick="CheckMCAnswer(43,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Drivers involved in a car accidents admitted they were texting when they crashed.</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText"><p><h3>The Danger of Typing SMS While Driving</h3></p> <br /><br /><p>The popularity of mobile phone devices has had some dangerous consequences. We know that mobile communication are linked to a significant increases in distracted driving which results in injury and loss of life.</p> <br /><p>The National Highway Traffic Safety Administration reported that in 2010 driver distraction was the cause of 18 percent of all fatal crashes with 3,092 people killed and crashes resulting in an injury 416,000 people wounded.</p> <br /><p>The Virginia Tech Transportation Institute found that text messaging creates a crash risk 23 times worse than driving while not distracted. Eleven percen of drivers aged 18 to 20 who were involved in an automobile accident and survived admitted they were sending or receiving texts when they crashed. Distracted driving endangers life and property and the current levels of injury and loss are unacceptable.</p> <br /><p><br />We know that mobile communication are linked to a <u>significant</u> increases...(paragraph 1).<br />The underlined word has similar meaning with...<br /></p><br /></div><ol class="MCAnswers"><li id="Q_44_0"><button class="FuncButton" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;unpleasant</li><li id="Q_44_1"><button class="FuncButton" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;important</li><li id="Q_44_2"><button class="FuncButton" id="Q_44_2_Btn" onclick="CheckMCAnswer(44,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;useful</li><li id="Q_44_3"><button class="FuncButton" id="Q_44_3_Btn" onclick="CheckMCAnswer(44,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;convenient</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText"><p><h3>Roger Parker</h3></p> <br /><br /><p>Roger Parker was born in Australia. When he was 18, he went to America with his brother. He had always wanted to be a cowboy, and in America he got a job on a ranch and learnt to ride.</p> <br /><p>When I was 22, I started riding wild horses in rodeos. Then, when I was visiting my family in Australia, they were shooting a film near my home. The film company needed a good rider and I got the job.</p> <br /><p>After that I became a stunt rider in films. I live in Canada now, but I travel all over the world to work in films. I&#x2019;ve been in movies with lots of famous stars.</p> <br /><p>It&#x2019;s great fun doing stunts. I&#x2019;ve had a few accidents of course. In my first film, I was on fire but the fire didn&#x2019;t stop, and I was badly burnt. In &#x201C;Running Fast&#x201D;, I fell down from a running car and broke my legs. I spent a month in hospital. But that&#x2019;s part of the job, and it&#x2019;s a job I love.</p> <br /><p><br />What is the text about?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_45_0"><button class="FuncButton" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A schedule</li><li id="Q_45_1"><button class="FuncButton" id="Q_45_1_Btn" onclick="CheckMCAnswer(45,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A hobby</li><li id="Q_45_2"><button class="FuncButton" id="Q_45_2_Btn" onclick="CheckMCAnswer(45,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A dream</li><li id="Q_45_3"><button class="FuncButton" id="Q_45_3_Btn" onclick="CheckMCAnswer(45,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;An auto-biography</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText"><p><h3>Roger Parker</h3></p> <br /><br /><p>Roger Parker was born in Australia. When he was 18, he went to America with his brother. He had always wanted to be a cowboy, and in America he got a job on a ranch and learnt to ride.</p> <br /><p>When I was 22, I started riding wild horses in rodeos. Then, when I was visiting my family in Australia, they were shooting a film near my home. The film company needed a good rider and I got the job.</p> <br /><p>After that I became a stunt rider in films. I live in Canada now, but I travel all over the world to work in films. I&#x2019;ve been in movies with lots of famous stars.</p> <br /><p>It&#x2019;s great fun doing stunts. I&#x2019;ve had a few accidents of course. In my first film, I was on fire but the fire didn&#x2019;t stop, and I was badly burnt. In &#x201C;Running Fast&#x201D;, I fell down from a running car and broke my legs. I spent a month in hospital. But that&#x2019;s part of the job, and it&#x2019;s a job I love.</p> <br /><p><br />Which one of the statement is correct?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_46_0"><button class="FuncButton" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Roger Parker never visited his family in Australia.</li><li id="Q_46_1"><button class="FuncButton" id="Q_46_1_Btn" onclick="CheckMCAnswer(46,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Roger Parker was jobless when he was in America.</li><li id="Q_46_2"><button class="FuncButton" id="Q_46_2_Btn" onclick="CheckMCAnswer(46,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Roger Parker went to America when he was a teenager.</li><li id="Q_46_3"><button class="FuncButton" id="Q_46_3_Btn" onclick="CheckMCAnswer(46,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Roger Parker was a cowboy when he was in Australia.</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText"><p><h3>Roger Parker</h3></p> <br /><br /><p>Roger Parker was born in Australia. When he was 18, he went to America with his brother. He had always wanted to be a cowboy, and in America he got a job on a ranch and learnt to ride.</p> <br /><p>When I was 22, I started riding wild horses in rodeos. Then, when I was visiting my family in Australia, they were shooting a film near my home. The film company needed a good rider and I got the job.</p> <br /><p>After that I became a stunt rider in films. I live in Canada now, but I travel all over the world to work in films. I&#x2019;ve been in movies with lots of famous stars.</p> <br /><p>It&#x2019;s great fun doing stunts. I&#x2019;ve had a few accidents of course. In my first film, I was on fire but the fire didn&#x2019;t stop, and I was badly burnt. In &#x201C;Running Fast&#x201D;, I fell down from a running car and broke my legs. I spent a month in hospital. But that&#x2019;s part of the job, and it&#x2019;s a job I love.</p> <br /><p><br /><br />&#x201C;It&#x2019;s great fun doing stunts.&#x201D; (paragraph 4) <br />The antonym of &#x201C;fun&#x201D; is &#x2026;.<br /></p><br /></div><ol class="MCAnswers"><li id="Q_47_0"><button class="FuncButton" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;mercy</li><li id="Q_47_1"><button class="FuncButton" id="Q_47_1_Btn" onclick="CheckMCAnswer(47,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;disaster</li><li id="Q_47_2"><button class="FuncButton" id="Q_47_2_Btn" onclick="CheckMCAnswer(47,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;happiness</li><li id="Q_47_3"><button class="FuncButton" id="Q_47_3_Btn" onclick="CheckMCAnswer(47,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;sorrow</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText"><p><h3>E-Business</h3></p> <br /><br /><p>You must have heard of Amazon.com, the biggest e-book store making an incredible amount of profit on the net. You may also be familiar with Detik.com, an electronic newspaper providing the hottest news in Indonesia and cashing in an on unbelievable amount of rupiah from it&#x2019;s advertisers. </p><br /><p>But, I bet you don&#x2019;t know about Darto, who rustles up hundreds of dollars giving math lessons to students in Australia through the Internet. You may also not know about Tito who cashes in millions of Rupiahs selling typical Indonesian cigarettes to his fellow Indonesians all around the world through the Internet. Yeah, e-business or e-commerce has become the juicy business on the net.</p><br /><br /><p><br />The main idea of the text is that&#x2026;&#x2026;&#x2026;&#x2026;..<br /></p></div><ol class="MCAnswers"><li id="Q_48_0"><button class="FuncButton" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;we can do business on the internet.</li><li id="Q_48_1"><button class="FuncButton" id="Q_48_1_Btn" onclick="CheckMCAnswer(48,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;we don&#x2019;t know an electronic newspaper in Indonesia.</li><li id="Q_48_2"><button class="FuncButton" id="Q_48_2_Btn" onclick="CheckMCAnswer(48,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;we are familiar with the e-business or e-commerce.</li><li id="Q_48_3"><button class="FuncButton" id="Q_48_3_Btn" onclick="CheckMCAnswer(48,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;we can find the biggest E-book store in the world.</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText"><p><h3>E-Business</h3></p> <br /><br /><p>You must have heard of Amazon.com, the biggest e-book store making an incredible amount of profit on the net. You may also be familiar with Detik.com, an electronic newspaper providing the hottest news in Indonesia and cashing in an on unbelievable amount of rupiah from it&#x2019;s advertisers. </p><br /><p>But, I bet you don&#x2019;t know about Darto, who rustles up hundreds of dollars giving math lessons to students in Australia through the Internet. You may also not know about Tito who cashes in millions of Rupiahs selling typical Indonesian cigarettes to his fellow Indonesians all around the world through the Internet. Yeah, e-business or e-commerce has become the juicy business on the net.</p><br /><p><br />What might be assumed from the text above ?<br /></p><br /></div><ol class="MCAnswers"><li id="Q_49_0"><button class="FuncButton" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Business on the internet is promising.</li><li id="Q_49_1"><button class="FuncButton" id="Q_49_1_Btn" onclick="CheckMCAnswer(49,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;All Australian students study math on the internet.</li><li id="Q_49_2"><button class="FuncButton" id="Q_49_2_Btn" onclick="CheckMCAnswer(49,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The products advertised on the net are sold out.</li><li id="Q_49_3"><button class="FuncButton" id="Q_49_3_Btn" onclick="CheckMCAnswer(49,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;We don&#x2019;t know about Amazon.com.</li></ol></li></ol>
+
+
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
